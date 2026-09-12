@@ -1,1 +1,15 @@
-{"name":"枪火演出 · Gunfire","version":"1.0.0","manifest_version":1,"description":"手枪、步枪、霰弹枪：枪口焰、弹迹、命中与护盾特效。","icon":"https://kexinzhanga.github.io/gunfire-mod/icon.svg","action":{"title":"枪火演出","icon":"https://kexinzhanga.github.io/gunfire-mod/icon.svg","popover":"https://kexinzhanga.github.io/gunfire-mod/index.html?v=1.0.0","width":380,"height":640},"background_url":"https://kexinzhanga.github.io/gunfire-mod/background.html?v=1.0.0"}
+{
+  "name": "枪火演出 · Gunfire",
+  "version": "1.0.1",
+  "manifest_version": 1,
+  "description": "手枪、步枪、霰弹枪：枪口焰、弹迹、命中与护盾特效。",
+  "icon": "https://kexinzhanga.github.io/gun/icon.svg",
+  "action": {
+    "title": "枪火演出",
+    "icon": "https://kexinzhanga.github.io/gun/icon.svg",
+    "popover": "https://kexinzhanga.github.io/gun/index.html?v=1.0.1",
+    "width": 380,
+    "height": 640
+  },
+  "background_url": "https://kexinzhanga.github.io/gun/background.html?v=1.0.1"
+}
