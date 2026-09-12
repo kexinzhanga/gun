@@ -1,15 +1,16 @@
-{
-  "name": "枪火演出 · Gunfire",
-  "version": "1.0.1",
-  "manifest_version": 1,
-  "description": "手枪、步枪、霰弹枪：枪口焰、弹迹、命中与护盾特效。",
-  "icon": "https://kexinzhanga.github.io/gun/icon.svg",
-  "action": {
-    "title": "枪火演出",
-    "icon": "https://kexinzhanga.github.io/gun/icon.svg",
-    "popover": "https://kexinzhanga.github.io/gun/index.html?v=1.0.1",
-    "width": 380,
-    "height": 640
-  },
-  "background_url": "https://kexinzhanga.github.io/gun/background.html?v=1.0.1"
-}
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>枪火演出</title>  <script type="module" crossorigin src="./assets/main-PDKP3Z4Z.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/api-CV9-bY2L.js">
+  <link rel="stylesheet" crossorigin href="./assets/main-BCXpAb7c.css">
+</head><body><main>
+<header><span class="crosshair">⌖</span><div><h1>枪火演出</h1><small>GUNFIRE / 1.1</small></div><span class="badge">视觉演出</span></header>
+<div class="demo"><span class="dummy left">●</span><div class="trace"></div><span class="dummy right">◎</span><small>锁定射手 · 点击目标 · 开火</small></div>
+<section><div class="row"><span id="shooter">尚未锁定射手</span><button id="lock">设为射手</button></div><p class="hint">先选中一个角色 Token，再点「设为射手」。</p></section>
+<section><label>武器类型</label><div class="weapons"><button data-weapon="pistol" class="active">手枪</button><button data-weapon="rifle">步枪</button><button data-weapon="shotgun">霰弹枪</button><button data-weapon="energy">能量枪</button><button data-weapon="rpg">RPG</button></div>
+<div class="fields"><label>判定结果<select id="result"><option value="hit">命中 · 火星</option><option value="miss">未命中 · 掠过</option><option value="shield">护盾 · 波纹</option></select></label><label>弹迹颜色<input id="color" type="color" value="#ffc266"></label></div>
+<div class="fields"><label>连发次数<input id="burst" type="number" min="1" max="6" value="1"></label><label>弹迹粗细<input id="thickness" type="range" min="1" max="5" value="2"></label></div>
+<div class="fields"><label>弹着散布<input id="spread" type="range" min="0" max="100" value="8"></label><label>弹速<input id="speed" type="range" min="600" max="3000" step="100" value="1800"></label></div>
+<label>枪口前移（Token 半径的百分比）<input id="muzzle" type="range" min="0" max="150" value="70"></label></section>
+<div class="actions"><button id="aim" class="primary">⌖ 点击地图目标开火</button><button id="fire">向当前选中目标开火</button><button id="cancel">退出瞄准</button></div>
+<p id="status" role="status" aria-live="polite">正在连接 Owlbear…</p>
+<details><summary>保存与显示</summary><div class="row"><input id="presetName" placeholder="预设名称，如：江策的手枪" maxlength="40"><button id="savePreset">保存</button></div><div class="row"><select id="presets"><option value="">选择已保存预设</option></select><button id="deletePreset">删除</button></div><label class="check"><input id="enabled" type="checkbox" checked>在本机显示枪火特效</label><p class="hint">参数和预设保存在当前浏览器。纯视觉演出，不扣血、不消耗动作。</p></details>
+</main></body></html>
